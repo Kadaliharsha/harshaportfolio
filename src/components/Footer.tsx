@@ -15,19 +15,19 @@ const Footer = () => {
 
           <div className="flex space-x-6">
             <a 
-              href="#" 
+              href="https://github.com/Kadaliharsha" 
               className="text-muted-foreground hover:text-primary transition-colors p-2 rounded-full hover:bg-primary/10"
             >
               <Github size={20} />
             </a>
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/kadaliharsha/" 
               className="text-muted-foreground hover:text-primary transition-colors p-2 rounded-full hover:bg-primary/10"
             >
               <Linkedin size={20} />
             </a>
             <a 
-              href="#" 
+              href="mailto:kadali.hrv@gmail.com" 
               className="text-muted-foreground hover:text-primary transition-colors p-2 rounded-full hover:bg-primary/10"
             >
               <Mail size={20} />
@@ -37,9 +37,7 @@ const Footer = () => {
 
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-muted-foreground text-sm flex items-center justify-center">
-            Made with <Heart size={16} className="mx-2 text-red-500" /> by Harshavardhan K
-            <span className="mx-2">•</span>
-            © 2024 All rights reserved
+            Building digital experiences with <Heart size={16} className="mx-2 text-green-500" /> — Harshavardhan K <span className="mx-2">•</span> © 2025 All rights reserved
           </p>
         </div>
       </div>

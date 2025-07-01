@@ -7,6 +7,20 @@ const Hero = () => {
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 -z-10">
+        {/* Bubbles animation */}
+        {[...Array(12)].map((_, i) => (
+          <div
+            key={i}
+            className="bubble"
+            style={{
+              left: `${Math.random() * 100}%`,
+              width: `${24 + Math.random() * 48}px`,
+              height: `${24 + Math.random() * 48}px`,
+              background: `rgba(100, 200, 255, ${0.2 + Math.random() * 0.3})`,
+              animationDelay: `${Math.random() * 8}s`,
+            }}
+          />
+        ))}
         <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-float" style={{animationDelay: '1s'}}></div>
       </div>

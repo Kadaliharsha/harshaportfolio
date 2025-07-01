@@ -11,7 +11,7 @@ const Skills = () => {
     },
     {
       title: 'Backend',
-      skills: ['Python', 'Java', 'Django', 'Flask', 'Spring Boot', 'Node.js', 'REST API', 'SQL', 'MySQL', 'MongoDB'],
+      skills: ['Python', 'Java', 'Django', 'Flask', 'Spring Boot', 'Node.js', 'REST API', 'MySQL', 'MongoDB'],
       icon: '⚙️'
     },
     {
@@ -21,7 +21,7 @@ const Skills = () => {
     },
     {
       title: 'Tools',
-      skills: ['Git', 'GitHub', 'GitLab', 'Visual Studio', 'Eclipse', 'Postman', 'Power BI', 'Shell Scripting', 'Azure'],
+      skills: ['Git/GitHub', 'Cursor', 'Visual Studio', 'Postman', 'Power BI', 'Shell Scripting', 'Azure'],
       icon: '🛠️'
     }
   ];

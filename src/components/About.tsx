@@ -13,12 +13,12 @@ const About = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <div className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-8 mb-8">
-              <div className="w-48 h-48 bg-primary/10 rounded-full mx-auto flex items-center justify-center">
-                <div className="text-6xl">👨‍💻</div>
-              </div>
-            </div>
+          <div className="flex justify-center items-center">
+            <img
+              src="/Kadali_Harshavardhan.jpg"
+              alt="Kadali Harshavardhan"
+              className="w-81 h-81 object-cover rounded-full shadow-lg border-4 border-primary/20"
+            />
           </div>
 
           <div className="space-y-6">

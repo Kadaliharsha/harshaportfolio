@@ -35,24 +35,42 @@ const Hero = () => {
             Creative Developer & Designer crafting beautiful digital experiences
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
+            <Button
+              size="lg"
+              className="bg-primary hover:bg-primary/90"
+              onClick={() => {
+                const el = document.getElementById('projects');
+                if (el) {
+                  el.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
               View My Work
             </Button>
-            <Button variant="outline" size="lg">
+            <Button
+              variant="outline"
+              size="lg"
+              onClick={() => {
+                const el = document.getElementById('contact');
+                if (el) {
+                  el.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
               Get In Touch
             </Button>
           </div>
           
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-12">
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Github size={24} />
+            <a href="https://github.com/Kadaliharsha" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <Github size={32} />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Linkedin size={24} />
+            <a href="https://www.linkedin.com/in/kadaliharsha/" target="_blank" rel="noopener noreferrer"className="text-muted-foreground hover:text-primary transition-colors">
+              <Linkedin size={32} />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Mail size={24} />
+            <a href="mailto:kadali.hrv@gmail.com?subject=Contact%20from%20Portfolio" className="text-muted-foreground hover:text-primary transition-colors">
+              <Mail size={32} />
             </a>
           </div>
         </div>

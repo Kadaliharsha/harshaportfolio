@@ -29,6 +29,14 @@ const Projects = () => {
       technologies: ['Python', 'NumPy', 'Pandas', 'MySQL'],
       liveUrl: '#',
       githubUrl: '#'
+    },
+    {
+      title: 'Sentiment Analysis for Product Reviews - Python',
+      description: 'This project analyzes user reviews to determine the sentiment (positive, negative, neutral) and correlate it with product ratings. It uses natural language processing techniques to clean and process textual data, then applies classification models to predict sentiments accurately.',
+      image: '/S&A.jpg',
+      technologies: ['Python', 'NumPy', 'Pandas', 'Matplotlib', 'Seaborn'],
+      liveUrl: '#',
+      githubUrl: '#'
     }
   ];
 
@@ -54,27 +62,24 @@ const Projects = () => {
                 <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-3 text-primary">{project.title}</h3>
-                <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
+              <CardContent className="p-6 flex flex-col items-center">
+                <h3 className="text-xl font-bold mb-3 text-primary text-center">{project.title}</h3>
+                <p className="text-muted-foreground mb-4 text-sm leading-relaxed text-justify">
                   {project.description}
                 </p>
-                
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2 mb-4 justify-center">
                   {project.technologies.map((tech, techIndex) => (
                     <Badge key={techIndex} variant="secondary" className="text-xs">
                       {tech}
                     </Badge>
                   ))}
                 </div>
-
-                <div className="flex gap-2">
-                  <Button size="sm" className="flex-1">
-                    <ExternalLink size={16} className="mr-2" />
-                    Live Demo
-                  </Button>
-                  <Button size="sm" variant="outline">
-                    <Github size={16} />
+                <div className="flex justify-center w-full">
+                  <Button size="sm" variant="outline" asChild>
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                      <Github size={16} />
+                      GitHub
+                    </a>
                   </Button>
                 </div>
               </CardContent>

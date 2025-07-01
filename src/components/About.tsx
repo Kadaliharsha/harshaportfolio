@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -27,7 +26,7 @@ const About = () => {
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-3">My Journey</h3>
                 <p className="text-muted-foreground">
-                  With over 5 years of experience in web development, I've worked with startups and established companies to bring their digital visions to life. I specialize in creating responsive, user-friendly applications that not only look great but perform exceptionally.
+                A software developer with hands-on experience in full-stack development, cloud technologies, and data analytics. Skilled in Python, Java, React.js, and Azure, I am dedicated to delivering efficient and impactful software solutions through a strong foundation in both frontend and backend technologies.
                 </p>
               </CardContent>
             </Card>
@@ -36,7 +35,7 @@ const About = () => {
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-3">What I Do</h3>
                 <p className="text-muted-foreground">
-                  I focus on full-stack web development, UI/UX design, and modern JavaScript frameworks. I'm passionate about clean code, beautiful interfaces, and creating solutions that make a real impact for businesses and users alike.
+                  I specialize in full-stack development, cloud technologies, and data analytics. My work involves building efficient and impactful software solutions using technologies such as Python, Java, React.js, and Azure, with a strong emphasis on both frontend and backend development.
                 </p>
               </CardContent>
             </Card>

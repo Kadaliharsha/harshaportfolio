@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -8,26 +7,26 @@ import { ExternalLink, Github } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include user authentication, product management, and real-time inventory tracking.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+      title: 'Electronics eCommerce Platform - Primecart',
+      description: 'A modern full stack eCommerce application built with Next.js, MongoDB, Tailwind CSS, Clerk for authentication, and Inngest for background jobs. Features include user authentication, product management, secure payments, and real-time order tracking.',
+      image: '/E&C.jpg',
+      technologies: ['Next.js', 'MongoDB', 'Tailwind CSS', 'Clerk', 'Inngest'],
       liveUrl: '#',
       githubUrl: '#'
     },
     {
-      title: 'Task Management App',
-      description: 'A collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop',
-      technologies: ['Vue.js', 'Firebase', 'Tailwind CSS'],
+      title: 'Retail and Sales Analytics Dashboard',
+      description: 'An interactive dashboard for analyzing retail and sales data across multiple regions. Features data visualization, KPI tracking, and actionable insights to drive business decisions.',
+      image: '/R&S.png',
+      technologies: ['Power BI', 'Excel', 'Pandas', 'Matplotlib', 'Jupyter'],
       liveUrl: '#',
       githubUrl: '#'
     },
     {
-      title: 'Weather Dashboard',
-      description: 'A responsive weather application with location-based forecasts, interactive maps, and detailed weather analytics.',
-      image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop',
-      technologies: ['React', 'TypeScript', 'OpenWeather API'],
+      title: 'Hospital Management System',
+      description: 'A Python-based command-line application that simulates hospital operations like managing patient records, appointments, billing, and medical inventory. Designed to streamline administrative workflows using structured data handling and SQL integration.',
+      image: '/H&S.jpg',
+      technologies: ['Python', 'NumPy', 'Pandas', 'MySQL'],
       liveUrl: '#',
       githubUrl: '#'
     }

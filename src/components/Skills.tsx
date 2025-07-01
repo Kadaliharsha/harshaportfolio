@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -7,17 +6,22 @@ const Skills = () => {
   const skillCategories = [
     {
       title: 'Frontend',
-      skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Vue.js', 'HTML5/CSS3'],
+      skills: ['React.js', 'HTML5/CSS3', 'Next.js', 'Tailwind CSS'],
       icon: '🎨'
     },
     {
       title: 'Backend',
-      skills: ['Node.js', 'Python', 'Express', 'PostgreSQL', 'MongoDB', 'REST APIs'],
+      skills: ['Python', 'Java', 'Django', 'Flask', 'Spring Boot', 'Node.js', 'REST API', 'SQL', 'MySQL', 'MongoDB'],
       icon: '⚙️'
     },
     {
-      title: 'Tools & Others',
-      skills: ['Git', 'Docker', 'AWS', 'Figma', 'Jest', 'GraphQL'],
+      title: 'Libraries',
+      skills: ['NumPy', 'Pandas', 'Matplotlib', 'TensorFlow'],
+      icon: '📚'
+    },
+    {
+      title: 'Tools',
+      skills: ['Git', 'GitHub', 'GitLab', 'Visual Studio', 'Eclipse', 'Postman', 'Power BI', 'Shell Scripting', 'Azure'],
       icon: '🛠️'
     }
   ];
@@ -32,7 +36,7 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center">
           {skillCategories.map((category, index) => (
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <CardContent className="p-8 text-center">

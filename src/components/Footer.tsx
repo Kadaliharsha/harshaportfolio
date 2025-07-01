@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Github, Linkedin, Mail, Heart } from 'lucide-react';
 
@@ -38,7 +37,7 @@ const Footer = () => {
 
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-muted-foreground text-sm flex items-center justify-center">
-            Made with <Heart size={16} className="mx-2 text-red-500" /> by Alex
+            Made with <Heart size={16} className="mx-2 text-red-500" /> by Harshavardhan K
             <span className="mx-2">•</span>
             © 2024 All rights reserved
           </p>

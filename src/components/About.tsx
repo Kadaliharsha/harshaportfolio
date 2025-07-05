@@ -26,7 +26,7 @@ const About = () => {
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-3">My Journey</h3>
                 <p className="text-muted-foreground">
-                A software developer with hands-on experience in full-stack development, cloud technologies, and data analytics. Skilled in Python, Java, React.js, and Azure, I am dedicated to delivering efficient and impactful software solutions through a strong foundation in both frontend and backend technologies.
+                A software engineer with hands-on experience in full-stack development, cloud technologies, and data analytics. Skilled in Python, Java, React.js, and Azure, I am dedicated to delivering efficient and impactful software solutions through a strong foundation in both frontend and backend technologies.
                 </p>
               </CardContent>
             </Card>

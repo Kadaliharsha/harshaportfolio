@@ -15,9 +15,8 @@ A modern, responsive portfolio website to showcase my projects, skills, and expe
 
 ## 🚀 Demo
 
-> _Add a link to your live site here, or a screenshot!_
+Link: https://harshaportfolio-pink.vercel.app/
 
-![Portfolio Screenshot](public/Kadali_Harshavardhan.jpg)
 
 ## 🛠️ Tech Stack
 

@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <h3 className="text-2xl font-bold text-primary mb-2">Software Engineer</h3>
+            <h3 className="text-2xl text-center font-bold text-primary mb-2">Software Engineer</h3>
             <p className="text-muted-foreground">
               Crafting digital experiences with passion and creativity
             </p>
@@ -37,7 +37,7 @@ const Footer = () => {
 
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-muted-foreground text-sm flex items-center justify-center">
-            Building digital experiences with <Heart size={16} className="mx-2 text-green-500" /> — Harshavardhan K <span className="mx-2">•</span> © 2025 All rights reserved
+            K Harshavardhan <span className="mx-2">•</span> © 2025 All rights reserved
           </p>
         </div>
       </div>

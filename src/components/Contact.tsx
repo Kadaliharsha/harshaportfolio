@@ -51,13 +51,8 @@ const Contact = () => {
             </div>
             <span className="text-muted-foreground">|</span>
             <div className="flex items-center gap-2">
-              <Phone className="text-primary" size={20} />
-              <span className="font-medium">+91 (730) 666-6464</span>
-            </div>
-            <span className="text-muted-foreground">|</span>
-            <div className="flex items-center gap-2">
               <MapPin className="text-primary" size={20} />
-              <span className="font-medium">Hyderabad, Telangana, India</span>
+              <span className="text-center font-medium">Hyderabad, Telangana, India</span>
             </div>
           </div>
         </div>

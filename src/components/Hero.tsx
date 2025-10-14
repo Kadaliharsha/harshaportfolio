@@ -29,7 +29,7 @@ const Hero = () => {
         <div className="animate-fadeInUp">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             Hi, I'm{' '}
-            <span className="text-primary">Harshavardhan K</span>
+            <span className="text-primary">K Harshavardhan</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Creative Developer & Designer crafting beautiful digital experiences

@@ -7,31 +7,37 @@ import { Github } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: 'AI in Personalised Learning - A Reommendation Engine',
-        description:
-          'A smart learning platform powered by multi-modal AI, offering adaptive quizzes and personalized insights to help students identify strengths and target areas for improvement.',
+      title: 'Codecollab - Collaborative Coding Platform',
+      description:
+        'A secure real-time environment for friends to practice coding together—live syncing via WebSockets, session isolation, and auto-save.',     
+      technologies: ['Python', 'Docker', 'FastAPI', 'Postgresql(Supabase)'],
+      githubUrl: 'https://github.com/Kadaliharsha/CodeCollab_Project'
+    },
+    {
+      title: 'AI in Personalised Learning - Recommendation Engine',
+      description:
+        'Adaptive learning platform leveraging multi-modal AI to deliver personalized quizzes and targeted improvement insights, improving learner retention and focus. Built with Python and Streamlit for rapid prototyping and model integration.',
       technologies: ['Python', 'Machine Learning', 'Streamlit'],
       githubUrl: 'https://github.com/Kadaliharsha/AI_in_personalised_learning',
     },
-
     {
       title: 'Electronics eCommerce Platform - Primecart',
       description:
-        'A modern full stack eCommerce application built with Next.js, MongoDB, Tailwind CSS, Clerk for authentication, and Inngest for background jobs. Features include user authentication, product management, secure payments, and real-time order tracking.',
+        'Scalable full‑stack eCommerce application (Next.js, MongoDB, Tailwind) with Clerk authentication and Inngest-powered background processing. Implemented secure payments, product management, and live order tracking to support a seamless customer experience.',
       technologies: ['Next.js', 'MongoDB', 'Tailwind CSS', 'Clerk', 'Inngest'],
       githubUrl: 'https://github.com/Kadaliharsha/primecart',
     },
     {
       title: 'Hospital Record and Billing Management System',
       description:
-        'A Python-based command-line application that simulates hospital operations like managing patient records, appointments, billing, and medical inventory to streamline operations.',
+        'Python CLI system for managing patient records, appointment scheduling, billing workflows, and medical inventory—designed to streamline hospital operations and improve administrative efficiency.',
       technologies: ['Python', 'NumPy', 'Pandas', 'MySQL'],
       githubUrl: 'https://github.com/Kadaliharsha/hospital_mgmt',
     },
     {
       title: 'MindCare - Mental Health and Psychosocial Support during Emergencies',
       description:
-        'MindCare is a mental health support web application built with Spring Boot and MongoDB. It allows users to track their emotional well-being, journal their thoughts, and access curated mental health resources.',
+        'MindCare — a mental health support web app built with Spring Boot and MongoDB. Enables users to track well-being, journal entries, and access curated resources; includes role-based access and scalable API design for emergency response.',
       technologies: [
         'Spring Boot',
         'Java',
@@ -47,7 +53,7 @@ const Projects = () => {
     {
       title: 'Sentiment Analysis for Product Reviews - Python',
       description:
-        'This project analyzes user reviews to determine the sentiment (positive, negative, neutral) and correlate it with product ratings. It uses NLP techniques and classification models.',
+        'NLP pipeline for sentiment analysis of product reviews using classical and modern techniques to classify sentiment and correlate findings with product ratings—useful for product insights and recommendation tuning.',
       technologies: [
         'Python',
         'Pandas',
@@ -81,14 +87,12 @@ const Projects = () => {
         {chunkedProjects.map((row, rowIndex) => (
           <div
             key={rowIndex}
-            className={`flex flex-wrap gap-8 mb-8 ${
-              row.length < 3 ? 'justify-center' : 'justify-between'
-            }`}
+            className={`flex flex-wrap gap-8 mb-8 items-stretch justify-center md:justify-between`}
           >
             {row.map((project, index) => (
               <Card
                 key={index}
-                className="group overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 w-full max-w-sm flex flex-col justify-between"
+                className="group overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 w-full sm:w-80 md:w-auto md:max-w-sm flex flex-col justify-between"
               >
                 <CardContent className="p-6 flex flex-col flex-grow">
                   <h3 className="text-xl font-bold mb-3 text-primary text-center min-h-[60px]">

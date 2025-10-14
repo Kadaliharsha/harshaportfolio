@@ -7,6 +7,14 @@ import { Github } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
+      title: 'AI in Personalised Learning - A Reommendation Engine',
+        description:
+          'A smart learning platform powered by multi-modal AI, offering adaptive quizzes and personalized insights to help students identify strengths and target areas for improvement.',
+      technologies: ['Python', 'Machine Learning', 'Streamlit'],
+      githubUrl: 'https://github.com/Kadaliharsha/AI_in_personalised_learning',
+    },
+
+    {
       title: 'Electronics eCommerce Platform - Primecart',
       description:
         'A modern full stack eCommerce application built with Next.js, MongoDB, Tailwind CSS, Clerk for authentication, and Inngest for background jobs. Features include user authentication, product management, secure payments, and real-time order tracking.',
@@ -14,28 +22,20 @@ const Projects = () => {
       githubUrl: 'https://github.com/Kadaliharsha/primecart',
     },
     {
-      title: 'Retail and Sales Analytics Dashboard',
+      title: 'Hospital Record and Billing Management System',
       description:
-        'An interactive dashboard for analyzing retail and sales data across multiple regions. Features data visualization, KPI tracking, and actionable insights to drive business decisions.',
-      technologies: ['Python', 'Power BI', 'Excel', 'Pandas', 'Matplotlib', 'Jupyter'],
-      githubUrl: 'https://github.com/Kadaliharsha/Retail-Sales-Analytics-Dashboard',
-    },
-    {
-      title: 'Hospital Management System',
-      description:
-        'A Python-based command-line application that simulates hospital operations like managing patient records, appointments, billing, and medical inventory.',
+        'A Python-based command-line application that simulates hospital operations like managing patient records, appointments, billing, and medical inventory to streamline operations.',
       technologies: ['Python', 'NumPy', 'Pandas', 'MySQL'],
       githubUrl: 'https://github.com/Kadaliharsha/hospital_mgmt',
     },
     {
-      title: 'MindCare – (Mental Health and Psychosocial Support during Emergencies)',
+      title: 'MindCare - Mental Health and Psychosocial Support during Emergencies',
       description:
         'MindCare is a mental health support web application built with Spring Boot and MongoDB. It allows users to track their emotional well-being, journal their thoughts, and access curated mental health resources.',
       technologies: [
         'Spring Boot',
         'Java',
         'Spring Data (MongoDB)',
-        'CRUD RESTful APIs',
         'Spring Security',
         'MongoDB',
         'React.js',

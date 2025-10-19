@@ -12,22 +12,19 @@ const About = () => {
             <div className="p-6">
               <h3 className="text-xl text-center font-semibold mb-3"> My Journey </h3>
               <p className="text-center text-lg text-muted-foreground">
-                  A software engineer with hands-on experience in full-stack development, cloud technologies, and data analytics. Skilled in Python, Java, React.js, and Azure, I am dedicated to delivering efficient and impactful software solutions through a strong foundation in both frontend and backend technologies.
-              </p>
+                  Passionate Software Engineer with hands-on experience in full-stack development, cloud computing, and data-driven applications. Skilled in Python, Java, React.js, and Azure, with a strong focus on designing scalable backend systems and seamless user experiences. Dedicated to writing clean, maintainable code that bridges performance and usability.              </p>
             </div>
 
               <div className="p-6">
                 <h3 className="text-xl text-center font-semibold mb-3">What I Do</h3>
                 <p className="text-center text-lg text-muted-foreground">
-                  I specialize in full-stack development, cloud technologies, and data analytics. My work involves building efficient and impactful software solutions using technologies such as Python, Java, React.js, and Azure, with a strong emphasis on both frontend and backend development.
-                </p>
+                    Started my journey by building end-to-end web applications and APIs that solve real-world problems. Over time, I’ve worked across backend systems, cloud platforms, and data pipelines, gaining practical experience through internships at Mphasis, Genamplify, and Infosys Springboard. I thrive in collaborative environments where technology meets impact.                </p>
               </div>
 
               <div className="p-6">
                 <h3 className="text-xl text-center font-semibold mb-3">Beyond Code</h3>
                 <p className="text-center text-lg text-muted-foreground">
-                  When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge through mentoring and writing. I believe in continuous learning and staying ahead of industry trends.
-                </p>
+                    Outside of development, I enjoy exploring emerging technologies, contributing to open-source projects, and mentoring peers on backend and cloud concepts. I believe in continuous learning, thoughtful problem-solving, and creating technology that genuinely makes a difference.                </p>
               </div>
           </div>
         </div>

@@ -32,8 +32,7 @@ const Hero = () => {
             <span className="text-primary">K Harshavardhan</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Creative Developer & Designer crafting beautiful digital experiences
-          </p>
+              Building reliable backends and data-driven systems that power meaningful digital experiences.          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button
               size="lg"

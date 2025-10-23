@@ -8,13 +8,13 @@ const Achievements = () => {
   const categories = [
     {
       title: 'LeetCode',
-      link: 'https://leetcode.com/your-username/', // replace with your link
+      link: 'https://leetcode.com/u/kadalihrv/', // replace with your link
       icon: <Code className="w-10 h-10 text-yellow-500 mx-auto" />,
       skills: ['200+ Problems Solved', 'Top 10% Global Ranking', 'Daily Streak Maintained'],
     },
     {
       title: 'TakeUForward',
-      link: 'https://takeuforward.org/',
+      link: 'https://takeuforward.org/plus/profile/kadalihrv',
       icon: <BookOpen className="w-10 h-10 text-green-500 mx-auto" />,
       skills: ['Data Structures and Algorithms', 'System Design Basics', 'Interview Prep'],
     },

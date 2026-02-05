@@ -18,10 +18,25 @@ const Contact = () => {
     const form = e.target as HTMLFormElement;
     const formData = new FormData(form);
 
+    // Collect form data into a plain object for JSON submission
+    const data: { [key: string]: string } = {};
+    formData.forEach((value, key) => {
+      data[key] = value.toString();
+    });
+
     try {
-      const response = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        body: formData,
+      const apiKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "YOUR_WEB3FORMS_KEY";
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: apiKey,
+          ...data,
+        }),
       });
 
       const result = await response.json();
@@ -63,10 +78,6 @@ const Contact = () => {
           <Card className="border-primary/10">
             <CardContent className="p-6">
               <form onSubmit={handleSubmit} className="space-y-4">
-                {/* Web3Forms Access Key - Replace with your own */}
-                <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY" />
-                <input type="hidden" name="subject" value="New Contact from Portfolio" />
-
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>

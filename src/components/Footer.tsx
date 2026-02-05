@@ -37,7 +37,7 @@ const Footer = () => {
 
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-muted-foreground text-sm flex items-center justify-center">
-            K Harshavardhan <span className="mx-2">•</span> © 2025 All rights reserved
+            K Harshavardhan <span className="mx-2">•</span> © {new Date().getFullYear()} All rights reserved
           </p>
         </div>
       </div>

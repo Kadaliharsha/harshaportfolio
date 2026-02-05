@@ -1,97 +1,74 @@
-# Harshavardhan K – Developer Portfolio
+# K. Harshavardhan - Professional Portfolio
 
-A modern, responsive portfolio website to showcase my projects, skills, and experience as a creative developer and designer. Built with React, TypeScript, Vite, Tailwind CSS, and shadcn/ui, this portfolio highlights my work in full-stack development, cloud technologies, and data analytics.
+Introduction
+A modern, responsive portfolio website built to showcase my journey as a Backend Developer and AI Enthusiast. Featuring a sleek Slate Gray + Electric Blue theme, this site highlights my experience at PwC and Mphasis, my projects in AI and full-stack development, and my technical skills.
 
-## ✨ Features
+Live Demo: [https://harshaportfolio-pink.vercel.app/](https://harshaportfolio-pink.vercel.app/)
 
-- **Beautiful Landing Page:** Eye-catching hero section with animated backgrounds and social links.
-- **About Me:** Personal journey, skills, and interests.
-- **Featured Projects:** Interactive cards showcasing recent work, each with tech stack and GitHub links.
-- **Skills Section:** Overview of technical proficiencies.
-- **Contact Form:** Direct email functionality powered by a Node.js/Express backend (with Nodemailer).
-- **Responsive Design:** Fully optimized for all devices.
-- **Modern UI:** Built with shadcn/ui and Tailwind CSS for a clean, accessible interface.
-- **Dark Mode:** (If enabled in your UI library/theme)
+## ✨ Key Features
 
-## 🚀 Demo
-
-Link: https://harshaportfolio-pink.vercel.app/
-
+- **Professional Branding:** Clean "Slate Gray + Electric Blue" aesthetic with geometric patterns.
+- **Interactive Experience Timeline:** Clickable cards detailing my roles at PwC, Yuvro-code, Mphasis, and more.
+- **Project Showcase:** Featured projects with GitHub integration and colorful visual indicators.
+- **Skills & Achievements:** Categorized technical skills and badges for competitive programming stats.
+- **Contact Form:** Fully functional contact form powered by **Web3Forms** (Serverless).
+- **Responsive Design:** Optimized for all devices using Tailwind CSS and shadcn/ui.
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React, TypeScript, Vite, Tailwind CSS, shadcn/ui, Radix UI
-- **Backend:** Node.js, Express, Nodemailer (for contact form)
-- **Other:** React Router, React Hook Form, Zod, Lucide Icons, and more
+- **Frontend Framework:** React 18 + Vite
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS + shadcn/ui
+- **Icons:** Lucide React
+- **Animations:** Framer Motion + CSS animations
+- **Forms:** Web3Forms (No backend required)
 
-## 📁 Folder Structure
+## 📁 Project Structure
 
-```
+```bash
 My_portfolio/
-  ├── public/                # Static assets (images, favicon, etc.)
-  ├── src/
-  │   ├── components/        # UI and page components
-  │   ├── hooks/             # Custom React hooks
-  │   ├── lib/               # Utility functions
-  │   ├── pages/             # Page-level components (Index, NotFound)
-  │   ├── App.tsx            # Main app component
-  │   └── main.tsx           # Entry point
-  ├── contact-backend/       # Express backend for contact form
-  ├── tailwind.config.ts     # Tailwind CSS configuration
-  ├── package.json           # Project metadata and scripts
-  └── ...                    # Other config and lock files
+├── src/
+│   ├── components/
+│   │   ├── ui/                 # shadcn/ui accessible components
+│   │   ├── Experience.tsx      # Timeline with modals
+│   │   ├── Projects.tsx        # Project showcase
+│   │   ├── Skills.tsx          # Tech stack categorization
+│   │   ├── Hero.tsx            # Introduction & Resume download
+│   │   └── Contact.tsx         # Web3Forms integration
+│   ├── App.tsx                 # Main application layout
+│   └── index.css               # Global styles & variables
+└── ...
 ```
 
-## 🏁 Getting Started
+## 🚀 Getting Started
 
-### Prerequisites
-
-- Node.js (v18+ recommended)
-- npm or bun
-
-### Installation
-
-1. **Clone the repository:**
+1. **Clone the repository**
    ```bash
-   git clone https://github.com/Kadaliharsha/your-portfolio-repo.git
-   cd Portfolio/My_portfolio
+   git clone https://github.com/Kadaliharsha/harshaportfolio.git
+   cd harshaportfolio
    ```
 
-2. **Install dependencies:**
+2. **Install dependencies**
    ```bash
    npm install
-   # or
-   bun install
    ```
 
-3. **Start the frontend:**
+3. **Configure Environment Variables**
+   Create a `.env` file in the root directory and add your Web3Forms key:
+   ```env
+   VITE_WEB3FORMS_ACCESS_KEY=your-access-key-here
+   ```
+
+4. **Run the development server**
    ```bash
    npm run dev
    ```
 
-4. **Start the backend (for contact form):**
-   ```bash
-   cd contact-backend
-   npm install
-   npm start
-   ```
-   > _Configure your email credentials in `contact-backend/index.js` before using the contact form._
+## 📬 Connect with Me
 
-5. **Open your browser:**  
-   Visit [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal).
-
-## 🧩 Customization
-
-- Update your personal info, social links, and project data in the respective components in `src/components/`.
-- Replace images in `public/` as needed.
-- Tweak styles via `tailwind.config.ts` and component classes.
-
-## 📬 Contact
-
-- **Email:** kadali.hrv@gmail.com
-- **LinkedIn:** [kadaliharsha](https://www.linkedin.com/in/kadaliharsha/)
+- **Email:** [kadali.hrv@gmail.com](mailto:kadali.hrv@gmail.com)
+- **LinkedIn:** [Kadaliharsha](https://www.linkedin.com/in/kadaliharsha/)
 - **GitHub:** [Kadaliharsha](https://github.com/Kadaliharsha)
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE). 
+---
+© 2026 K Harshavardhan. All rights reserved.

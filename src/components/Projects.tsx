@@ -2,77 +2,77 @@ import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Github } from 'lucide-react';
+import { Github, Code2, Brain, ShoppingCart, Building2, Heart, BarChart3 } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
     {
-      title: 'Codecollab - Collaborative Coding Platform',
+      title: 'CodeCollab',
+      subtitle: 'Collaborative Coding Platform',
       description:
-        'A secure real-time environment for friends to practice coding together—live syncing via WebSockets, session isolation, and auto-save.',     
-      technologies: ['Python', 'Docker', 'FastAPI', 'Postgresql(Supabase)'],
-      githubUrl: 'https://github.com/Kadaliharsha/CodeCollab_Project'
+        'A secure real-time environment for friends to practice coding together—live syncing via WebSockets, session isolation, and auto-save.',
+      technologies: ['Python', 'Docker', 'FastAPI', 'PostgreSQL'],
+      githubUrl: 'https://github.com/Kadaliharsha/CodeCollab_Project',
+      icon: <Code2 className="w-6 h-6" />,
+      color: 'text-blue-500',
+      bgColor: 'bg-blue-500/10'
     },
     {
-      title: 'AI in Personalised Learning - Recommendation Engine',
+      title: 'AI Learning Engine',
+      subtitle: 'Personalized Recommendation System',
       description:
-        'Adaptive learning platform leveraging multi-modal AI to deliver personalized quizzes and targeted improvement insights, improving learner retention and focus. Built with Python and Streamlit for rapid prototyping and model integration.',
+        'Adaptive learning platform leveraging multi-modal AI to deliver personalized quizzes and targeted improvement insights.',
       technologies: ['Python', 'Machine Learning', 'Streamlit'],
       githubUrl: 'https://github.com/Kadaliharsha/AI_in_personalised_learning',
+      icon: <Brain className="w-6 h-6" />,
+      color: 'text-purple-500',
+      bgColor: 'bg-purple-500/10'
     },
     {
-      title: 'Electronics eCommerce Platform - Primecart',
+      title: 'PrimeCart',
+      subtitle: 'Electronics eCommerce Platform',
       description:
-        'Scalable full‑stack eCommerce application (Next.js, MongoDB, Tailwind) with Clerk authentication and Inngest-powered background processing. Implemented secure payments, product management, and live order tracking to support a seamless customer experience.',
-      technologies: ['Next.js', 'MongoDB', 'Tailwind CSS', 'Clerk', 'Inngest'],
+        'Scalable full-stack eCommerce app with Clerk auth and Inngest background processing. Secure payments and live order tracking.',
+      technologies: ['Next.js', 'MongoDB', 'Tailwind', 'Clerk'],
       githubUrl: 'https://github.com/Kadaliharsha/primecart',
+      icon: <ShoppingCart className="w-6 h-6" />,
+      color: 'text-amber-500',
+      bgColor: 'bg-amber-500/10'
     },
     {
-      title: 'Hospital Record and Billing Management System',
+      title: 'Hospital Manager',
+      subtitle: 'Record & Billing Management',
       description:
-        'Python CLI system for managing patient records, appointment scheduling, billing workflows, and medical inventory—designed to streamline hospital operations and improve administrative efficiency.',
+        'Python CLI system for managing patient records, appointment scheduling, billing workflows, and medical inventory.',
       technologies: ['Python', 'NumPy', 'Pandas', 'MySQL'],
       githubUrl: 'https://github.com/Kadaliharsha/hospital_mgmt',
+      icon: <Building2 className="w-6 h-6" />,
+      color: 'text-teal-500',
+      bgColor: 'bg-teal-500/10'
     },
     {
-      title: 'MindCare - Mental Health and Psychosocial Support during Emergencies',
+      title: 'MindCare',
+      subtitle: 'Mental Health Support App',
       description:
-        'MindCare — a mental health support web app built with Spring Boot and MongoDB. Enables users to track well-being, journal entries, and access curated resources; includes role-based access and scalable API design for emergency response.',
-      technologies: [
-        'Spring Boot',
-        'Java',
-        'Spring Data (MongoDB)',
-        'Spring Security',
-        'MongoDB',
-        'React.js',
-        'React Router',
-        'TailwindCSS',
-      ],
+        'Mental health web app with Spring Boot and MongoDB. Track well-being, journal entries, and access curated resources.',
+      technologies: ['Spring Boot', 'Java', 'MongoDB', 'React.js'],
       githubUrl: 'https://github.com/Kadaliharsha/MindCare_',
+      icon: <Heart className="w-6 h-6" />,
+      color: 'text-rose-500',
+      bgColor: 'bg-rose-500/10'
     },
     {
-      title: 'Sentiment Analysis for Product Reviews - Python',
+      title: 'Sentiment Analyzer',
+      subtitle: 'Product Review NLP Pipeline',
       description:
-        'NLP pipeline for sentiment analysis of product reviews using classical and modern techniques to classify sentiment and correlate findings with product ratings—useful for product insights and recommendation tuning.',
-      technologies: [
-        'Python',
-        'Pandas',
-        'NumPy',
-        'NLTK / SpaCy',
-        'Scikit-learn',
-        'Matplotlib',
-        'Seaborn',
-        'Jupyter Notebook',
-      ],
+        'NLP pipeline for sentiment analysis of product reviews using classical and modern techniques for product insights.',
+      technologies: ['Python', 'NLTK', 'Scikit-learn', 'Jupyter'],
       githubUrl: 'https://github.com/Kadaliharsha/Sentiment-Analysis-for-Product-Ratings',
+      icon: <BarChart3 className="w-6 h-6" />,
+      color: 'text-green-500',
+      bgColor: 'bg-green-500/10'
     },
   ];
-
-  // Split into rows of 3
-  const chunkedProjects = [];
-  for (let i = 0; i < projects.length; i += 3) {
-    chunkedProjects.push(projects.slice(i, i + 3));
-  }
 
   return (
     <section id="projects" className="py-20 bg-muted/30">
@@ -84,46 +84,61 @@ const Projects = () => {
           </p>
         </div>
 
-        {chunkedProjects.map((row, rowIndex) => (
-          <div
-            key={rowIndex}
-            className={`flex flex-wrap gap-8 mb-8 items-stretch justify-center md:justify-between`}
-          >
-            {row.map((project, index) => (
-              <Card
-                key={index}
-                className="group overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 w-full sm:w-80 md:w-auto md:max-w-sm flex flex-col justify-between"
-              >
-                <CardContent className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-xl font-bold mb-3 text-primary text-center min-h-[60px]">
-                    {project.title}
-                  </h3>
-
-                  <p className="text-muted-foreground mb-4 text-sm leading-relaxed text-justify">
-                    {project.description}
-                  </p>
-
-                  <div className="flex flex-wrap gap-2 mb-4 justify-center">
-                    {project.technologies.map((tech, techIndex) => (
-                      <Badge key={techIndex} variant="secondary" className="text-xs">
-                        {tech}
-                      </Badge>
-                    ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {projects.map((project, index) => (
+            <Card
+              key={index}
+              className="group overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col border-slate-200/50"
+            >
+              <CardContent className="p-6 flex flex-col flex-grow">
+                {/* Icon and Title */}
+                <div className="flex items-start gap-4 mb-4">
+                  <div className={`p-3 rounded-xl ${project.bgColor} ${project.color} shrink-0`}>
+                    {project.icon}
                   </div>
-
-                  <div className="flex justify-center mt-auto">
-                    <Button size="sm" variant="outline" asChild>
-                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                        <Github size={16} />
-                        GitHub
-                      </a>
-                    </Button>
+                  <div>
+                    <h3 className={`text-lg font-bold ${project.color}`}>
+                      {project.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      {project.subtitle}
+                    </p>
                   </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        ))}
+                </div>
+
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4 flex-grow">
+                  {project.description}
+                </p>
+
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.technologies.map((tech, techIndex) => (
+                    <Badge
+                      key={techIndex}
+                      variant="secondary"
+                      className="text-xs bg-slate-100 text-slate-600"
+                    >
+                      {tech}
+                    </Badge>
+                  ))}
+                </div>
+
+                <div className="mt-auto pt-4 border-t border-slate-100">
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    asChild
+                    className="w-full hover:bg-slate-900 hover:text-white transition-colors"
+                  >
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                      <Github size={16} className="mr-2" />
+                      View on GitHub
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </div>
     </section>
   );

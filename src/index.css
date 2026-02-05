@@ -2,68 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Design system with light green theme */
+/* Design system with Slate Gray + Electric Blue theme */
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 222 47% 11%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 142 76% 36%;
+    --primary: 217 91% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 142 30% 95%;
-    --secondary-foreground: 142 76% 20%;
+    --secondary: 215 20% 95%;
+    --secondary-foreground: 215 25% 27%;
 
-    --muted: 142 30% 96%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 215 20% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 142 50% 88%;
-    --accent-foreground: 142 76% 20%;
+    --accent: 215 20% 93%;
+    --accent-foreground: 215 25% 27%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 142 30% 90%;
-    --input: 142 30% 90%;
-    --ring: 142 76% 36%;
+    --border: 215 20% 91%;
+    --input: 215 20% 91%;
+    --ring: 217 91% 60%;
 
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 222 47% 6%;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 222 47% 8%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 222 47% 8%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 142 76% 50%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 6%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 215 25% 15%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 215 25% 15%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
+    --accent: 215 25% 15%;
     --accent-foreground: 210 40% 98%;
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 63% 31%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 215 25% 15%;
+    --input: 215 25% 15%;
+    --ring: 217 91% 60%;
   }
 }
 
@@ -84,6 +84,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -91,25 +92,14 @@
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-10px);
-  }
-}
-
-@keyframes bubble {
-  0% {
-    transform: translateY(0) scale(1);
-    opacity: 0.7;
-  }
-  80% {
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateY(-600px) scale(1.2);
-    opacity: 0;
   }
 }
 
@@ -121,13 +111,59 @@
   animation: float 3s ease-in-out infinite;
 }
 
-.bubble {
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+/* Geometric pattern background */
+.geometric-pattern {
+  background-image:
+    radial-gradient(circle at 1px 1px, hsl(var(--primary) / 0.15) 1px, transparent 0);
+  background-size: 40px 40px;
+}
+
+/* Corner decorations */
+.corner-decoration {
   position: absolute;
-  bottom: -100px;
-  border-radius: 50%;
-  opacity: 0.7;
-  animation: bubble 8s linear infinite;
+  width: 200px;
+  height: 200px;
+  opacity: 0.1;
   pointer-events: none;
+}
+
+.corner-decoration::before,
+.corner-decoration::after {
+  content: '';
+  position: absolute;
+  border: 2px solid hsl(var(--primary));
+}
+
+.corner-top-right::before {
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  border-left: none;
+  border-bottom: none;
+}
+
+.corner-bottom-left::before {
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  border-right: none;
+  border-top: none;
 }
 
 html {

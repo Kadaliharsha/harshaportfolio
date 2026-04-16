@@ -51,12 +51,12 @@ const Projects = () => {
       bgColor: 'bg-teal-500/10'
     },
     {
-      title: 'MindCare',
+      title: 'Synapse',
       subtitle: 'Mental Health Support App',
       description:
         'Mental health web app with Spring Boot and MongoDB. Track well-being, journal entries, and access curated resources.',
       technologies: ['Spring Boot', 'Java', 'MongoDB', 'React.js'],
-      githubUrl: 'https://github.com/Kadaliharsha/MindCare_',
+      githubUrl: 'https://github.com/Kadaliharsha/Synapse',
       icon: <Heart className="w-6 h-6" />,
       color: 'text-rose-500',
       bgColor: 'bg-rose-500/10'

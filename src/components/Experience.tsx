@@ -34,7 +34,7 @@ const Experience = () => {
             company: 'PwC India (via Elfonze)',
             location: 'Pune, IN',
             type: 'current',
-            period: 'Nov 2024 – Present',
+            period: 'Nov 2025 – Present',
             description: 'Selected for structured training aligned with PwC enterprise engineering standards.',
             highlights: [
                 'Ranked Top 4 of 40+ teams in AI Immersion Program',
@@ -58,7 +58,7 @@ const Experience = () => {
             company: 'Yuvro-code',
             location: 'Remote (Freelance)',
             type: 'freelance',
-            period: 'Nov 2024 – Present',
+            period: 'Nov 2025 – Present',
             description: 'Building backend services for an AI-powered learning and hiring platform.',
             highlights: [
                 'Built 15+ REST endpoints for assessments & recruiting',
@@ -82,7 +82,7 @@ const Experience = () => {
             company: 'Mphasis Limited',
             location: 'Pune, IN',
             type: 'past',
-            period: 'Mar 2024 – Jun 2024',
+            period: 'Mar 2025 – Jun 2025',
             description: 'Intensive backend development training with hands-on project delivery.',
             highlights: [
                 'Completed 200+ hours of backend training',
@@ -106,7 +106,7 @@ const Experience = () => {
             company: 'Genamplify Solutions',
             location: 'Hyderabad, IN',
             type: 'past',
-            period: 'Sept 2023 – Feb 2024',
+            period: 'Sept 2024 – Feb 2025',
             description: 'Healthcare startup focused on scheduling and credentialing workflows.',
             highlights: [
                 'Developed 10+ RESTful APIs for scheduling workflows',
@@ -130,7 +130,7 @@ const Experience = () => {
             company: 'Infosys Springboard',
             location: 'Remote',
             type: 'past',
-            period: 'Jun 2023 – Aug 2023',
+            period: 'Jun 2024 – Aug 2024',
             description: 'Led development of a Mental Wellness Platform with Spring Boot.',
             highlights: [
                 'Led 6-member team through full SDLC',

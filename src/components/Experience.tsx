@@ -32,7 +32,7 @@ const Experience = () => {
         {
             title: 'Intern Specialist – Technology',
             company: 'PwC India (via Elfonze)',
-            location: 'Pune, IN',
+            location: 'Hyderabad, IN',
             type: 'current',
             period: 'Nov 2025 – Present',
             description: 'Selected for structured training aligned with PwC enterprise engineering standards.',
